@@ -12,19 +12,19 @@ struct ButtonModify: View {
     let action:() -> Void
     var body: some View {
         Button(title, action: action)
-        .font(.title)
-        .frame(width: 300, height: 50)
-        .background(Color.blue)
-        .cornerRadius(20)
-        
-        .overlay(
-            RoundedRectangle(cornerRadius: 20)
-                .stroke(Color.white, lineWidth: 4)
-                )
-        .foregroundColor(.white)
-                    .padding()
-                }
+            .font(.title)
+            .frame(width: 300, height: 50)
+            .background(Color.blue)
+            .cornerRadius(20)
+            
+            .overlay(
+                RoundedRectangle(cornerRadius: 20)
+                    .stroke(Color.white, lineWidth: 4)
+                    )
+            .foregroundColor(.white)
+                        .padding()
     }
+}
 
 
 struct ButtonModify_Previews: PreviewProvider {
